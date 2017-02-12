@@ -1,5 +1,7 @@
 # Two Step Picker Dialog For Android
-![Hero Image]()
+[![](https://jitpack.io/v/aliab/Two-Step-Picker-Dialog.svg)](https://jitpack.io/#aliab/Two-Step-Picker-Dialog)
+
+![Hero Image](https://raw.githubusercontent.com/aliab/Two-Step-Picker-Dialog/master/screenshot/heroimage.jpg)
 
 ## Description
 
@@ -23,7 +25,7 @@ allprojects {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-    compile ''
+    compile 'com.github.aliab:Two-Step-Picker-Dialog:V1.0.1'
 }
 ```
 
