@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
                 .withOkButton("Get Me")
                 .withCancelButton("Cancel It")
                 .withBaseOnLeft(true) // if you want it RTL like, set it to false
+                .withInitialBaseSelected(2)
+                .withInitialStepSelected(1)
                 .withOnStepDataRequested(new OnStepDataRequestedListener() {
                     @Override
                     public List<String> onStepDataRequest(int baseDataPos) {

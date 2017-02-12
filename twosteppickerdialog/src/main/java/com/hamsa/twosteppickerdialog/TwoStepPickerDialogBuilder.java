@@ -18,5 +18,9 @@ interface TwoStepPickerDialogBuilder {
 
     TwoStepPickerDialogBuilder withOnStepDataRequested(OnStepDataRequestedListener onStepDataRequestedListener);
 
+    TwoStepPickerDialogBuilder withInitialBaseSelected(int i);
+
+    TwoStepPickerDialogBuilder withInitialStepSelected(int i);
+
     TwoStepPickerDialog build();
 }

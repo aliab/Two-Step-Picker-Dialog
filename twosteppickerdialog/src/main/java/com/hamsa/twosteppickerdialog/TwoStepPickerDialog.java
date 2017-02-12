@@ -25,6 +25,9 @@ public class TwoStepPickerDialog {
     private List<List<String>> stepData;
     private boolean baseOnLeft = true;
     private OnStepDataRequestedListener stepDataRequestedListener;
+    private int defaultBaseSelected = 0;
+    private int defaultStepSelected = 0;
+
 
     private TwoStepPickerDialog(Context context) {
         this.context = context;
@@ -32,6 +35,14 @@ public class TwoStepPickerDialog {
 
     public void setStepDataRequestedListener(OnStepDataRequestedListener stepDataRequestedListener) {
         this.stepDataRequestedListener = stepDataRequestedListener;
+    }
+
+    public void setDefaultBaseSelected(int defaultBaseSelected) {
+        this.defaultBaseSelected = defaultBaseSelected;
+    }
+
+    public void setDefaultStepSelected(int defaultStepSelected) {
+        this.defaultStepSelected = defaultStepSelected;
     }
 
     private void setBaseOnLeft(boolean baseOnLeft) {
@@ -102,6 +113,15 @@ public class TwoStepPickerDialog {
         // update for current step
         updateStepPicker(numberPickerBase, numberPickerStep);
 
+        // set default init value
+        if (defaultBaseSelected <= numberPickerBase.getMaxValue()) {
+            numberPickerBase.setValue(defaultBaseSelected);
+        }
+
+        if (defaultStepSelected <= numberPickerStep.getMaxValue()) {
+            numberPickerStep.setValue(defaultStepSelected);
+        }
+
         // listen for ok button
         dialog.setPositiveButton(okButtonString, new DialogInterface.OnClickListener() {
             @Override
@@ -155,8 +175,6 @@ public class TwoStepPickerDialog {
         numberPickerStep.setMinValue(0);
         numberPickerStep.setMaxValue(stepDataStrinArray.length - 1);
         numberPickerStep.setDisplayedValues(stepDataStrinArray);
-
-        numberPickerStep.setValue(1);
     }
 
 
@@ -210,6 +228,18 @@ public class TwoStepPickerDialog {
         @Override
         public Builder withOnStepDataRequested(OnStepDataRequestedListener onStepDataRequestedListener) {
             twoStepPickerDialog.setStepDataRequestedListener(onStepDataRequestedListener);
+            return this;
+        }
+
+        @Override
+        public Builder withInitialBaseSelected(int i) {
+            twoStepPickerDialog.setDefaultBaseSelected(i);
+            return this;
+        }
+
+        @Override
+        public Builder withInitialStepSelected(int i) {
+            twoStepPickerDialog.setDefaultStepSelected(i);
             return this;
         }
 
