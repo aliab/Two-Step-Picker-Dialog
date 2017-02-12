@@ -25,7 +25,7 @@ allprojects {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-    compile 'com.github.aliab:Two-Step-Picker-Dialog:V1.0.1'
+    compile 'com.github.aliab:Two-Step-Picker-Dialog:V1.1.0'
 }
 ```
 
@@ -77,6 +77,14 @@ Then add the this to your java code:
 |withInitialStepSelected(int i)| Set selected step data item when dialog appears|
 
 ## Changelog
+
+### v1.1.0
+
+ * Ability to choose initial value
+
+### v1.0.1
+
+ * clean up manifest
 
 ### v1.0.0
 
