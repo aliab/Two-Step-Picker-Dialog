@@ -1,5 +1,5 @@
 # Two Step Picker Dialog For Android
-![Hero Image]()
+![Hero Image](https://raw.githubusercontent.com/aliab/Two-Step-Picker-Dialog/master/screenshot/heroimage.jpg)
 
 ## Description
 
