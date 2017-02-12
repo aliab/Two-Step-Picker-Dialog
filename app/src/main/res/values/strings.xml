@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TwoStepPicker</string>
+    <string name="show_picker">Show Picker</string>
+</resources>
