@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 .withOnStepDataRequested(new OnStepDataRequestedListener() {
                     @Override
                     public List<String> onStepDataRequest(int baseDataPos) {
-                        return getRandomList(baseDataPos + " - ");
+                        return getRandomList("Step " + (baseDataPos + 1) + " - ");
                     }
                 })
                 .withDialogListener(new OnStepPickListener() {
