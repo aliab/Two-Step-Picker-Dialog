@@ -68,9 +68,6 @@ import-summary.txt
 bin/
 gen/
 
-# Local configuration file (sdk path, etc)
-local.properties
-
 # Eclipse project files
 .classpath
 .project
