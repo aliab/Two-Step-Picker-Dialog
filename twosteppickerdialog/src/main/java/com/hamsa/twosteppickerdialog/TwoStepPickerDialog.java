@@ -143,12 +143,20 @@ public class TwoStepPickerDialog {
             data = (ArrayList<String>) stepData.get(numberPickerBase.getValue());
         }
 
-        numberPickerStep.setMinValue(0);
-        numberPickerStep.setMaxValue(data.size() - 1);
+        // Prevent ArrayOutOfBoundExceptions by setting
+        // values array to null so its not checked
+        numberPickerStep.setDisplayedValues(null);
 
+        // make string array
         String[] stepDataStrinArray = new String[data.size()];
         stepDataStrinArray = data.toArray(stepDataStrinArray);
+
+        //  update data
+        numberPickerStep.setMinValue(0);
+        numberPickerStep.setMaxValue(stepDataStrinArray.length - 1);
         numberPickerStep.setDisplayedValues(stepDataStrinArray);
+
+        numberPickerStep.setValue(1);
     }
 
 

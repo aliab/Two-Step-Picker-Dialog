@@ -12,6 +12,7 @@ import com.hamsa.twosteppickerdialog.TwoStepPickerDialog;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -64,9 +65,10 @@ public class MainActivity extends AppCompatActivity {
 
     public List<String> getRandomList(String perFix) {
         List<String> randomData = new ArrayList<>();
-        randomData.add(perFix + "1");
-        randomData.add(perFix + "2");
-        randomData.add(perFix + "3");
+        Random r = new Random();
+        for (int i = 1; i < r.nextInt(100); i++) {
+            randomData.add(perFix + i);
+        }
         return randomData;
     }
 }
