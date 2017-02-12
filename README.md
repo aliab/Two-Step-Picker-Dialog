@@ -37,6 +37,8 @@ Then add the this to your java code:
                     .withOkButton("Get Me")
                     .withCancelButton("Cancel It")
                     .withBaseOnLeft(true) // if you want it RTL like, set it to false
+                    .withInitialBaseSelected(0)
+                    .withInitialStepSelected(0)
                     .withOnStepDataRequested(new OnStepDataRequestedListener() {
                         @Override
                         public List<String> onStepDataRequest(int baseDataPos) {
@@ -69,7 +71,8 @@ Then add the this to your java code:
 |withStepData(List<List<String>> stepData)| Set static data for steps - don't pass it if you implement OnStepDataRequestedListener|
 |withStepData(withBaseOnLeft(boolean b))| If you want to show view RTL like, pass true|
 |withOnStepDataRequested(OnStepDataRequestedListener onStepDataRequestedListener)| Set in step picker listener for return dynamic data|
-
+|withInitialBaseSelected(int i);| Set selected base data item when dialog appears|
+|withInitialStepSelected(int i)| Set selected step data item when dialog appears|
 
 ## Changelog
 
