@@ -6,5 +6,5 @@ package com.hamsa.twosteppickerdialog;
 
 public interface OnStepPickListener {
     void onStepPicked(int basePos, int stepPos);
-    void onDismised();
+    void onDismissed();
 }

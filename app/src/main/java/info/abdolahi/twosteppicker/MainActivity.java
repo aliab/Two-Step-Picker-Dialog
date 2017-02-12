@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onDismised() {
+                    public void onDismissed() {
                         Toast.makeText(MainActivity.this, "Dismised!", Toast.LENGTH_SHORT).show();
                     }
                 })

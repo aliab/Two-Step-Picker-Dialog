@@ -119,7 +119,7 @@ public class TwoStepPickerDialog {
             public void onClick(DialogInterface dialogInterface, int i) {
 
                 if (listener != null) {
-                    listener.onDismised();
+                    listener.onDismissed();
                 }
 
                 dialogInterface.dismiss();
