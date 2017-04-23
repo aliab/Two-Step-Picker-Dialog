@@ -65,7 +65,7 @@ Then add the this to your java code:
 ## Public Builder Methods
 
 | Name | Description |
-|:----:|:----:|:-------:|:-----------:|
+|:----:|:----:|
 |withDialogListener(OnStepPickListener listener)| Get dialog actions |
 |withOkButton(String okButton)| Set dialog positive button string|
 |withCancelButton(String cancelButton)| Set dialog negative button string |
