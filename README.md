@@ -71,7 +71,7 @@ Then add the this to your java code:
 |withCancelButton(String cancelButton)| Set dialog negative button string |
 |withBaseData(List<String> baseData)| Set Base data of picker|
 |withStepData(List<List<String>> stepData)| Set static data for steps - don't pass it if you implement OnStepDataRequestedListener|
-|withStepData(withBaseOnLeft(boolean b))| If you want to show view RTL like, pass true|
+|withBaseOnLeft(boolean b)| If you want to show view RTL like, pass true|
 |withOnStepDataRequested(OnStepDataRequestedListener onStepDataRequestedListener)| Set in step picker listener for return dynamic data|
 |withInitialBaseSelected(int i);| Set selected base data item when dialog appears|
 |withInitialStepSelected(int i)| Set selected step data item when dialog appears|
