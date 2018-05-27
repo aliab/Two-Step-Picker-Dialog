@@ -25,7 +25,7 @@ allprojects {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-    compile 'com.github.aliab:Two-Step-Picker-Dialog:V1.1.0'
+    implementation 'com.github.aliab:Two-Step-Picker-Dialog:V1.1.0'
 }
 ```
 
